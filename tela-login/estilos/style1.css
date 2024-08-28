@@ -70,6 +70,7 @@ form > p > input{
     text-align: center;
     font-weight: bold;
     color: gray;
+    border-radius: 10px;
 }
 
 form > p > input[type=button]{
@@ -77,4 +78,16 @@ form > p > input[type=button]{
     border: 1px solid white;
     color: white;
     font-weight: bold;
+}
+
+form > p > input:hover{
+    border: 1px solid rgba(87, 87, 242, 0.674) ;
+}
+
+div.acessos{
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
