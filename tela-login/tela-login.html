@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="estilos/style2.css">
 </head>
 <body>
-    <div id="img">
-        
-    </div>
-    <div id="login">
-        <header>
+    <main>
+        <section id="login">
             <div id="img">
-                <img src="imagens/logo-duolingo.webp" alt="logo">
+
             </div>
-            <div id="p">
-                <h1>Sign Back in</h1>
-                <p>Choose from accounts saved on this device</p>
-            </div>
-        </header>
-        <section id="sec">
             <div id="form">
-                <form action="scripts/script.js" method="post" autocomplete="on">
-                    <p><input type="email" name="email" id="iemail" autocomplete="email" placeholder="e-mail" ></p>
-                    <p><input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="senha"></p>
-                    <p><input type="button" value="Entrar"></p>
+                <header>
+                    <img src="imagens/logo-duolingo.webp" alt="logo">
+                    <h1>Sign Back in</h1>
+                    <p>Choose from accounts saved on this device</p>
+                </header>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" required placeholder="seu e-mail" autocomplete="email" maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" autocomplete="current-password" minlength="8">
+                    </div>
+                    <div class="entrar">
+                        <div class="entrarc" id="goo">
+                            <img src="imagens/icon-google.png" alt="">
+                        </div>
+                        <div class="entrarc" id="face">
+                        </div>
+                        <div class="entrarc" id="maça">
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="acessos">
-                <p>Não tem conta? <a href="">Cadastre-se</a></p>
-                <p><a href="">Esqueci minha senha</a></p>
-            </div>
         </section>
-        <footer>
-            <p>Tela feita por <a href="https://github.com/JosePCAmaral">José Pedro</a></p>
-        </footer>
-    </div>
+    </main>
     <script src="scripts/script.js"></script>
 </body>
 </html>

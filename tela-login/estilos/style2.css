@@ -1,19 +1,86 @@
-@media screen and (min-width: 768px){
+@charset "UTF-8";
 
-    div#login{
-        width: 40vw;
-        height: 100vw;
-        display: inline;
+@media screen and (min-width: 600px) and (max-width: 992px){
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #6d2c82);
     }
-    form > p > input{
-        width: 70%;
+    
+    section#login{
+        width: 100vw;
     }
-    div#img{
-        background-image: url(../imagens/background.avif);
-        background-size: cover;
-        width: 60vw;
-        height: 100vh;
+
+    section#login > div#img{
+        float: left;
+        width: 55%;
+        height: 100%;
+        background-position: center;
+        display: block;
+    }
+
+    section#login > div#form{
         float: right;
-        display: inline;
+        width: 45%;
+        height: 100%;
+        box-shadow: 2px 2px 20px black;
     }
+
+    div.campo > input{
+        width: 90%;
+    }
+
+    div#form > p{
+        margin-bottom: 50px;
+    }
+
+    form > input[type=submit]{
+        margin-top: 50px;
+        margin-bottom: 160px;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    body{
+        background-image: linear-gradient(to top, #49a09d, #6d2c82);
+    }
+
+    section#login{
+        width: 100vw;
+    }
+
+    section#login > div#img{
+        float: right;
+        width: 65%;
+        height: 100%;
+        background-position: bottom;
+        display: block;
+    }
+
+    section#login > div#form{
+        float: left;
+        width: 35%;
+    }
+
+    div#form > h2{
+        font-size: 1.2em;
+    }
+
+    div#form > P{
+        font-size: 1.2em;
+    }
+
+    div.campo > input{
+        width: 90%;
+    }
+
+    div#form > p{
+        margin-bottom: 50px;
+    }
+
+    form > input[type=submit]{
+        margin-top: 50px;
+        margin-bottom: 130px;
+    }
+
 }

@@ -3,92 +3,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 *{
+    font-family: "Nerko One", cursive;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html{
-    font-family: "Nerko One", cursive;
     width: 100vw;
     height: 100vh;
 }
 
-div#login{
-    background-color: rgb(242, 244, 252);
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
-header{
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login > div#img{
+    display: block;
+    background: #6d2c82 url(../imagens/background.avif) no-repeat;
+    height: 200px;
+    background-size: cover;
+    display: none;
+}
+
+section#login > div#form{
+    display: block;
+    padding: 10px;
+}
+
+div#form > header{
     text-align: center;
 }
 
-header > div#img > img{
-    width: 100px;
-    height: 100px;
-    padding-top: 3vh;
+div#form > header > img{
+    padding-top: 10px;
+    width: 150px;
+    height: 150px;
 }
 
-header > div#p > p{
-    padding: 3vh;
-    font-size: 1.3em;
-    font-weight: 100;
+div#form > header > h1{
+    text-align: center;
+    padding: 10px;
 }
 
-header > div#p > h1{
-    padding-top: 3vh;
+div#form > header > P{
+    font-size: 1em;
+    text-align: center;
 }
 
-footer{
+form > div.entrar{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3b837f;
+}
+
+form > div.entrar > div.entrarc{
+    margin: 10px;
+    width: 70%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+form > div.entrar > div#goo > img{
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+
+form > div.campo{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form > input[type=submit]:hover{
+    background-color: #3b837f;
+}
+
+form > a.botao{
     display: block;
     text-align: center;
-    padding-top: 20vh;
-}
-
-footer > p  > a{
+    font-size: 1em;
+    width: 95%;
+    height: 40px;
     color: black;
     text-decoration: none;
 }
 
-footer > p  > a:hover{
-    font-weight: bolder;
-    text-decoration: underline;
+form > a.botao:hover{
+    color: blue;
 }
 
-form{
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-form > p{
-    padding: 10px;
-}
-
-form > p > input{
-    width: 70vw;
-    height: 50px;
-    border: 1px solid rgba(162, 162, 245, 0.674);
-    background-color: rgb(250, 251, 253);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.175);
-    text-align: center;
-    font-weight: bold;
-    color: gray;
-    border-radius: 10px;
-}
-
-form > p > input[type=button]{
-    background-color: rgb(0, 123, 255);
-    border: 1px solid white;
-    color: white;
-    font-weight: bold;
-}
-
-form > p > input:hover{
-    border: 2px solid rgba(114, 114, 248, 0.674) ;
-}
-
-form > p > input[type=button]:hover{
-    background-color: rgb(80, 163, 252);
-}
-
-div.acessos{
-    text-align: center;
+div.campo  > input{
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
