@@ -23,21 +23,19 @@ header > div#img > img{
 }
 
 header > div#p > p{
-    padding: 20px;
+    padding: 3vh;
     font-size: 1.3em;
     font-weight: 100;
 }
 
 header > div#p > h1{
-    padding-top: 30px;
+    padding-top: 3vh;
 }
 
 footer{
+    display: block;
     text-align: center;
-    position: absolute;
-    top: 97%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 15vh;
 }
 
 footer > p  > a{
@@ -51,10 +49,8 @@ footer > p  > a:hover{
 }
 
 form{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 form > p{
@@ -62,7 +58,7 @@ form > p{
 }
 
 form > p > input{
-    width: 300px;
+    width: 70vw;
     height: 50px;
     border: 1px solid rgba(162, 162, 245, 0.674);
     background-color: rgb(250, 251, 253);
@@ -81,13 +77,13 @@ form > p > input[type=button]{
 }
 
 form > p > input:hover{
-    border: 1px solid rgba(87, 87, 242, 0.674) ;
+    border: 2px solid rgba(114, 114, 248, 0.674) ;
+}
+
+form > p > input[type=button]:hover{
+    background-color: rgb(80, 163, 252);
 }
 
 div.acessos{
     text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
